@@ -17,7 +17,7 @@ Future<void> main() async {
   ));
 }
 
-
+/*
 class TakePictureScreen extends StatefulWidget {
   final CameraDescription camera;
 
@@ -26,7 +26,7 @@ class TakePictureScreen extends StatefulWidget {
   @override
   TakePictureScreenState createState() => TakePictureScreenState();
 }
-
+*/
 class TakePictureScreenState extends State<TakePictureScreen> {
   CameraController? _controller;
   Future<void>? _initializeControllerFuture;
