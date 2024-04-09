@@ -25,7 +25,7 @@ Future<void> sendResultToEmail( bool isCostly) async {
       print("Email sent successfully.");
     } else {
 
-      print("Failed to send the email. Error: ${response.body}");
+      print("not good: ${response.body}");
     }
   } catch (exception) {
     print("Failed to send the email. Exception: $exception");
