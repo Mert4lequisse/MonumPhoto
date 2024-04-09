@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-Future<void> sendResultToEmail( bool isCostly) async {
+Future<void> sendResultToEmail( String emailAddress, bool isCostly) async {
 
   Uri emailServiceUrl = Uri.parse('https://back.mert4lequisse:9999/send-email');
 
@@ -14,7 +14,7 @@ Future<void> sendResultToEmail( bool isCostly) async {
         'Content-Type': 'application/json; charset=UTF-8',
       },
       body: jsonEncode(<String, String>{
-        'to': 'koidarlo69@gmail.com',
+        'to': emailAddress,
         'subject': 'analyse cout',
         'message': resultMessage,
       }),
