@@ -14,7 +14,7 @@ Future<void> sendResultToEmail( bool isCostly) async {
         'Content-Type': 'application/json; charset=UTF-8',
       },
       body: jsonEncode(<String, String>{
-        'to':,
+        'to': 'koidarlo69@gmail.com',
         'subject': 'analyse cout',
         'message': resultMessage,
       }),
